@@ -1,0 +1,42 @@
+.flex-nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ccc5b9;
+    margin: 0;
+}
+
+.flex-nav li {
+    list-style: none;
+}
+
+.flex-nav a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+
+    font-size: 1.3em;
+    padding: 0.7em 0.5em;
+}
+
+.flex-nav a:hover {
+    animation: itemHover 0.23s ease-in forwards;
+}
+
+.flex-nav li:nth-child(4) {
+    margin-left: auto;
+}
+
+.flex-nav li:nth-child(5) {
+    margin: 0;
+}
+
+@keyframes itemHover {
+    0% {
+    }
+    100% {
+        color: white;
+        background-color: #403d39;
+    }
+}
