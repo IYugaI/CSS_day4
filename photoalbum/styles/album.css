@@ -1,0 +1,131 @@
+body {
+    box-sizing: border-box;
+    background-color: rgb(138, 160, 135);
+}
+
+.album {
+    display: grid;
+
+    margin: 0 auto;
+    margin-top: 6em;
+    width: fit-content;
+    gap: 20px;
+
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(4, 150px);
+    /* border: 1px solid black; */
+}
+
+.album div:nth-child(1) {
+    grid-column: span 2;
+}
+
+.album div:nth-child(2) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.wide-col {
+    grid-column: span 2;
+}
+
+.pic {
+    background-size: cover;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic_1 {
+    background-image: url('../images/sloth.jpg');
+    background-position: 0 30%;
+}
+
+.pic_1 p {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 1%;
+    margin-left: 72%;
+}
+
+.pic_2 {
+    background-image: url('../images/bearded-tamarin.jpg');
+    background-position: 30%;
+}
+
+.pic_2 p {
+    font-size: 1em;
+    margin: 0;
+    margin-top: 76%;
+    margin-left: 6%;
+}
+
+.pic_3 {
+    background-image: url('../images/river-otter.jpg');
+    background-size: 220%;
+    background-position: center 70%;
+}
+
+.pic_3 p {
+    font-size: 0.6em;
+    margin-top: 80%;
+    margin-left: 5%;
+}
+
+.pic_4 {
+    background-image: url('../images/howler-monkey.jpg');
+    background-size: 230%;
+    background-position: 100% 70%;
+}
+
+.pic_4 p {
+    font-size: 0.6em;
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.pic_5 {
+    background-image: url('../images/jaguar-1.jpg');
+    background-size: 170%;
+    background-position: 100% 70%;
+}
+
+.pic_5 p {
+    font-size: 0.9em;
+    margin: 0;
+    margin-top: 1%;
+    margin-left: 74%;
+}
+
+.pic_6 {
+    background-image: url('../images/harpy-eagle.jpg');
+    background-size: 100%;
+    background-position: 100% 70%;
+}
+
+.pic_6 p {
+    font-size: 0.9em;
+    margin: 0;
+    margin-top: 25%;
+    margin-left: 74%;
+}
+
+.overlay {
+    height: 100%;
+    color: rgba(255, 255, 255, 0);
+}
+
+.overlay:hover {
+    animation: hoverEffect 0.1s ease forwards;
+}
+
+@keyframes hoverEffect {
+    from {
+    }
+    to {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.335), rgba(0, 0, 0, 0.523));
+        color: rgb(255, 255, 255);
+        /* content-visibility: visible; */
+    }
+}
