@@ -1,0 +1,68 @@
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    flex-basis: 100%;
+    justify-self: center;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    width: 800px;
+    border: 1px solid black;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dish {
+    height: 50vh;
+    flex-basis: 33%;
+    border: 0.3px solid rgba(86, 35, 12, 0.289);
+}
+
+.dish p {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.091);
+}
+
+.dish span {
+    font-weight: 700;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.img {
+    height: 40%;
+}
+
+.dish_1 .img {
+    background-image: url('../images/45299-ed4_wide.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dish_2 .img {
+    background-image: url('../images/tzntxa---c1905x884x50px50p-up--d64ae0bdde7be6fe96f9e475c1601db5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+}
+
+.dish_3 .img {
+    background-image: url('../images/vareniki4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 40%; */
+}
