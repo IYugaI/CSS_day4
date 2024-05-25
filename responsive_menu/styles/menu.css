@@ -22,6 +22,7 @@ h3 {
 }
 
 .dish {
+    background-color: rgba(255, 232, 186, 0.536);
     height: 50vh;
     flex-basis: 33%;
     border: 0.3px solid rgba(86, 35, 12, 0.289);
@@ -64,5 +65,50 @@ h3 {
     background-image: url('../images/vareniki4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: 40%; */
+}
+
+/* xs */
+
+@media (max-width: 475px) {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .dish {
+        flex-basis: 100%;
+    }
+
+    .dish_1 .img {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .dish_3 .img {
+        background-position: bottom 25% right 1%;
+    }
+
+    .img {
+        height: 60%;
+    }
+}
+
+/* md */
+
+@media (475px < width <= 768px) {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        width: 90%;
+    }
+
+    .dish {
+        flex-basis: 49%;
+    }
+
+    .img {
+        height: 55%;
+    }
 }
